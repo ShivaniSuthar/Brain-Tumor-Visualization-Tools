@@ -1,2 +1,2 @@
 # VISUALIZATION_TOOLS_UCLA_SU23
-This repository contains code that is used to create visualizations to aid in research and treatment for individuals affected by metastatic brain tumors.
+This repository contains code that creates visualizations which aid in the research and treatment for individuals affected by metastatic brain tumors.
