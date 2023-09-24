@@ -1,0 +1,9 @@
+FROM python:3.8-buster
+
+WORKDIR /app/graphvis
+
+RUN pip install -U pandas plotly dash dash_bootstrap_components gunicorn
+
+COPY graphvis /app/graphvis
+
+CMD gunicorn --bind 0.0.0.0:8050 app:server

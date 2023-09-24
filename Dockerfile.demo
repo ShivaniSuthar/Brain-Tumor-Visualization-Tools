@@ -1,0 +1,12 @@
+FROM python:3.8-buster
+
+COPY demo /app/demo
+
+RUN pip install -U jupyter setuptools wheel numpy cython
+RUN pip install -U pycortex
+
+WORKDIR /app/demo
+
+EXPOSE 5000
+
+CMD [ "ipython" ]

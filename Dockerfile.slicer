@@ -1,0 +1,12 @@
+FROM python:3.8-buster
+
+WORKDIR /main3/slicer
+
+
+RUN pip install -U plotly numpy gunicorn scikit-image dash
+
+
+COPY slicer /main3/slicer/
+
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8069", "main3:server"]
