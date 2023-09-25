@@ -8,11 +8,11 @@
 This repository contains code that creates visualizations which aid in the research and treatment for individuals affected by metastatic brain tumors.
 
 # Applications & Code Organization
-All the code for this project is contained within the "UCLA_SU23_Work" folder. There are 3 main folders within UCLA_SU23_Work:
+All the code for this project is contained within 3 main folders:
 
-1) "Demo"
-2) "Graphvis"
-3) "Slicer"
+1) "demo"
+2) "graphvis"
+3) "slicer"
 
 #### Demo: #### 
 The demo folder contains a python file, "Codefile.py", in which I modified existing code that launched a 3D interactive brain viewer to include a drop-down menu that contains the options "Lung", "Breast", "Kidney", "Melanoma", and "Colorectal". When applied to real-world patient data, this drop down menu would allow users to see how these different types of cancers have metastasized in patient's brains. For example, when a user clicks on "lung", the 3D brain that appears in the interactive viewer will display areas in the brain affected by tumors for lung cancer patients only. In order to interact with the visualization, a user can click on the brain and move it around with their mouse to see different areas of it. The image below displays the brain viewer when "lung" is selected using randomized data. However, when real-patient data is fed in, the delineations between the tumorous and non-tumorous regions should become more clear.
