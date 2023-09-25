@@ -1,0 +1,31 @@
+Required Dependencies:
+
+- cortex
+- numpy
+- dash_bootstrap_components
+- dash
+- Dash
+- dcc
+- html
+- plotly.graph_objs
+- skimage
+- base64
+- Input
+- Output
+- callback
+- os
+- pickle
+- matplotlib.pyplot
+- jupyter
+- setuptools
+- wheels
+- cython
+- pycortex
+- pandas
+- plotly
+- gunicorn
+- scikit-image
+
+
+
+
