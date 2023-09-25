@@ -74,6 +74,70 @@ https://dash.plotly.com/dash-core-components/tooltip
 
 
 
-# How to run the code
-In order to run the different code files, first, Docker Desktop must be running since all the code runs using Docker. Then, there are 4 main files involved in running the code - "Dockerfile.demo", "Dockerfile.graphvis", "Dockerfile.slicer", and "run.sh". "Dockerfile.demo" contains the docker script to run "Codefile.py". "Dockerfile.graphvis" contains the docker script to run "app.py". "Dockerfile.slicer" contains the docker script to run either "main.py", "main2.py", or "main3.py". Lastly, "run.sh" contains the bash script to build and run any of the docker files. In order to actually launch the visualizations, open a new bash terminal and type either "bash run.sh demo", "bash run.sh graphvis", or "bash run.sh slicer" depepending on which visualization you want to launch. Finally, to view the visualization, you will have to access the port that was opened specified in the bash terminal. Please note: In order to run "Codefile.py", after running "bash run.sh demo", Ipython will be launched in the terminal and the code contained in "Codefile.py" must be pasted into Ipython and then the visualization will be viewable on the port. In order to run "main.py", "main2.py", or "main3.py", the name of the file you want to run must be updated accordingly in the "Dockerfile.slicer" file in the locations where it says "main_" (3 locations total). The port numbers for the different visualizations can also be updated by changing the port number in the corresponding section in "run.sh" and the corresponding docker file.
+# How To Run The Code
+
+#### Setup #####
+In order to run the different code files, first, a Docker Desktop account and image must be created and kept running in the background since all the code runs using Docker. For instance, your Docker Desktop screen should look something like this:
+
+
+<img width="960" alt="docker_desktop_screen" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/2e885009-ed13-40c7-b33f-ebb4aa62db38">
+
+Second, VSCode must be installed on your computer.
+
+#### Launching the Visualizations ##### 
+Then, there are 4 main files involved in running the code - "Dockerfile.demo", "Dockerfile.graphvis", "Dockerfile.slicer", and "run.sh". 
+- "Dockerfile.demo" contains the docker script to run "Codefile.py".
+- "Dockerfile.graphvis" contains the docker script to run "app.py".
+- "Dockerfile.slicer" contains the docker script to run either "main.py", "main2.py", or "main3.py".
+- "Run.sh" contains the bash script to build and run any of the docker files.
+  
+In order to actually launch the visualizations, follow the steps specified below:
+- Open VSCode
+- Load the code in this repository in your VSCode file explorer. It should look something like this:
+   <img width="960" alt="file_explorer" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/b70b749e-be74-40f0-9eff-ed5e6f3e0194">
+- Open a new bash terminal in VSCode. It should look something like this:
+   <img width="757" alt="VSCode_bash_terminal" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/071f38e7-4aee-4b27-af44-c92b9469863b">
+
+##### Launching "Demo" #####
+If you want to run the "demo" visualization, continue to follow the steps below:
+1) Type "bash run.sh" demo in your terminal. This should launch IPython. Your terminal should look something like this:
+   <img width="599" alt="demo_terminal_step_1" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/7727acf7-122f-47ca-adb6-5dff71c4fe20">
+2) Copy and paste the code in "Codefile.py" into your terminal and hit enter. Once it's done loading, your terminal should look something like this:
+
+   
+   <img width="675" alt="demo_final_terminal" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/f3b84a12-90a5-4036-ba83-8f734b1563c8">
+3) In a browser, open the port number that was launched specified in your terminal. Then, the visualization should appear.
+
+##### Launching "Graphvis" #####
+If you want to run the "graphvis" visualization, continue to follow the steps below:
+1) Type "bash run.sh graphvis" in your terminal and hit enter. Once it's done loading, it should look something like this:
+   <img width="585" alt="graphvis_terminal" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/ac8d5863-f2e6-4d74-843d-6229fb0f991c">
+2) In a browser, open the port number that was launched specified in your terminal. Then, the visualization should appear.
+
+##### Launching "Slicer" #####
+If you want to run the "slicer" visualization, continue to follow the steps below.
+For slicer, you can either launch "main", "main2", or "main3". However, they all follow a similar procedure. Here, main3 is used as an example:
+1) Change the "Dockerfile.slicer" file in the circled locations in the image below to specify whether you want to run "main", "main2", or "main3":
+   
+   <img width="290" alt="main3_ex" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/ddb0f9a5-8ffe-45d8-8268-5eb30aeeb8e8">
+   
+2) Type "bash run.sh slicer" in your terminal and hit enter. Once it's done loading, it should look something like this:
+   <img width="566" alt="slicer_terminal" src="https://github.com/ShivaniSuthar/BRAIN_TUMOR_VISUALIZATION_TOOLS/assets/122011763/505549a4-d0b2-45e6-8306-448afa2a8135">
+3) In a browser, open the port number that was launched specified in your terminal. Then, the visualization should appear.
+
+##### Retrieving Data and Other Notes ##### 
+- All required data for these visualizations are already included in this repository. Please refer to the "Applications and Code Organization" section above to see the specific location for the image data files. 
+- The expected output for each of the visualizations are shown in the "Applications and Code Organization" section above.
+- The port numbers for the different visualizations can also be updated by changing the port number in the visualization’s corresponding section in "run.sh" and its corresponding docker file.
+
+##### Dependencies #####
+All required dependencies are specified in the "Requirements.txt" file in this repository
+
+# Contact
+Shivani Suthar
+UCSD, B.S. in Data Science and Cognitive Science w/ML (March 2024) 
+ssuthar@ucsd.edu
+
+
+   
 
