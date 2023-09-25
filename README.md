@@ -134,8 +134,11 @@ For slicer, you can either launch "main", "main2", or "main3". However, they all
 All required dependencies are specified in the "Requirements.txt" file in this repository
 
 # Contact
+
 Shivani Suthar
+
 UCSD, B.S. in Data Science and Cognitive Science w/ML (March 2024) 
+
 ssuthar@ucsd.edu
 
 
