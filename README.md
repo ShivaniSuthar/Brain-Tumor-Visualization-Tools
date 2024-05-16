@@ -137,7 +137,7 @@ All required dependencies are specified in the "Requirements.txt" file in this r
 
 Shivani Suthar
 
-UCSD, B.S. in Data Science and Cognitive Science w/ML (March 2024) 
+UCSD, B.S. in Data Science and Cognitive Science w/ML (June 2024) 
 
 ssuthar@ucsd.edu
 
