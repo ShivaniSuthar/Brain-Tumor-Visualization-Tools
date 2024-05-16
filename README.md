@@ -139,7 +139,7 @@ Shivani Suthar
 
 UCSD, B.S. in Data Science and Cognitive Science w/ML (June 2024) 
 
-ssuthar@ucsd.edu
+shivanisuthar09@gmail.com
 
 
    
